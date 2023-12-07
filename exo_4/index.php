@@ -11,6 +11,7 @@ $resultat = retourneTrue();
 // Affichage du résultat
 var_dump($resultat); // Cela affichera "bool(true)"
 
+exo_2
 
 $alexis = "alexis";
 $turan = "turan";
@@ -22,6 +23,7 @@ function chaine($prenom1,$prenom2) {
 
 echo chaine($alexis, $turan);
 
+exo_3
 
 function chaine($prenom1,$prenom2) {
 
@@ -29,20 +31,24 @@ function chaine($prenom1,$prenom2) {
 }
 echo chaine("bonjour","aurevoir");
 
+exo_4
+
 function chaine($n1,$n2) {
 if($n1 > $n2){ 
-    echo "Le premier nombre est plus grand";
+    return "Le premier nombre est plus grand";
 }elseif($n1 <  $n2){
-    echo "Le premier nombre est plus petit";
+    return"Le premier nombre est plus petit";
 }else{
-    echo "Les deux nombres sont identiques";
+    return "Les deux nombres sont identiques";
 }
 
 
 }
 chaine (10,20);
 chaine (20,10);
-chaine (10,10);
+chaine (10,return
+
+exo_5
 
 function chaine($nombre,$bonjour) {
 
@@ -50,6 +56,8 @@ function chaine($nombre,$bonjour) {
 }
 
 echo chaine(007,"bonjour");
+
+exo_6
 
 function forme($nom,$prenom,$age) {
 
@@ -59,29 +67,29 @@ function forme($nom,$prenom,$age) {
 
 echo forme("moreno","alexis",25);
 
-
+exo_7
 function visa($age,$gender){
 
     if(($age >= 18)&&($gender === "homme")){
-        echo "Vous êtes un homme et vous êtes majeur";
+        return "Vous êtes un homme et vous êtes majeur";
     
     } elseif (($age < 18)&&($gender === "homme")){
-        echo "Vous êtes un homme et vous êtes mineur";
+        return "Vous êtes un homme et vous êtes mineur";
     
     }elseif (($age < 18)&&($gender === "femme")){
-        echo "Vous êtes une femme et vous êtes mineur";
+        return "Vous êtes une femme et vous êtes mineur";
     
     }elseif (($age >= 18)&&($gender === "femme")){
-        echo "vous etes une femme et vous etes majeur";
+        return "vous etes une femme et vous etes majeur";
     }
 }
 
-visa(20,"homme");
-visa(10,"homme");
-visa(20,"femme");
-visa(10,"femme");
+echo visa(20,"homme");
+echo visa(10,"homme");
+echo visa(20,"femme");
+echo visa(10,"femme");
 
-
+exo_8
 
 function chaine($n1,$n2,$n3){
 
